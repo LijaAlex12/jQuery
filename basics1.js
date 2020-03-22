@@ -40,3 +40,17 @@ console.log($("img").attr("src"));
  $('h1').prepend("<button>new</button>");
  $('h1').append("<button>new</button>");
  $('button').remove();
+
+// $('button').on('click',function(){
+//   $('h1').fadeToggle();
+// });
+//fadeIn//fadeOut//fadetoggle//slideUp//slideDown//slideToggle
+
+// $('button').on('click',function(){
+//   $('h1').animate({opacity:0.5});  //only those things that has a numeric value unlike color
+// });//margin:"20%"
+
+$('button').on('click',function(){
+  $('h1').slideUp().slideDown().animate({opacity:0.5});
+});
+
